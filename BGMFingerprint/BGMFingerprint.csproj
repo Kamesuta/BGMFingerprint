@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SignAssembly>True</SignAssembly>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ThirdParty\Spreads.LMDB\**" />
+    <EmbeddedResource Remove="ThirdParty\Spreads.LMDB\**" />
+    <None Remove="ThirdParty\Spreads.LMDB\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SoundFingerprinting" Version="8.3.0" />
+    <PackageReference Include="SoundFingerprinting.Emy" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoundFingerprinting.Extensions.LMDB\src\SoundFingerprinting.Extensions.LMDB\SoundFingerprinting.Extensions.LMDB.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y /d &quot;$(ProjectDir)ThirdParty\FFmpeg\bin\x64\*.dll&quot; &quot;$(ProjectDir)$(OutDir)\FFmpeg\bin\x64\&quot;&#xD;&#xA;" />
+  </Target>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BGMFingerprint", "BGMFingerprint\BGMFingerprint.csproj", "{A8B50D31-445E-452B-9214-184109978A5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundFingerprinting.Extensions.LMDB", "SoundFingerprinting.Extensions.LMDB\src\SoundFingerprinting.Extensions.LMDB\SoundFingerprinting.Extensions.LMDB.csproj", "{B2A53A59-BF82-4496-B33F-27742C3B3197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8B50D31-445E-452B-9214-184109978A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B50D31-445E-452B-9214-184109978A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B50D31-445E-452B-9214-184109978A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B50D31-445E-452B-9214-184109978A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A53A59-BF82-4496-B33F-27742C3B3197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A53A59-BF82-4496-B33F-27742C3B3197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A53A59-BF82-4496-B33F-27742C3B3197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A53A59-BF82-4496-B33F-27742C3B3197}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E9EA874-D534-4A38-8DDB-2BE463E995FB}
+	EndGlobalSection
+EndGlobal
